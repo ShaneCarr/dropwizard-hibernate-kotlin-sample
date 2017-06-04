@@ -1,4 +1,5 @@
-##Dropwizard + Hibernate + Kotlin Example
+Dropwizard + Hibernate + Kotlin Example
+========================
 
 
-This is sample application which uses the Dropwizard + Hibernate + Kotlin + Maven .
+This is a sample application which is developed using Dropwizard + Hibernate + Kotlin + Maven.
