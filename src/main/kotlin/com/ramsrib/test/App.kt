@@ -78,11 +78,12 @@ open class UserResource(val userDAO: UserDAO) {
     }
 }
 
-
+// Note: Opening the class & function is mandatory to make the proxy to work (UnitOfWorkAwareProxyFactory)
 open class UserAction(val sessionFactory: SessionFactory) {
-    @UnitOfWork fun fetchUsers() {
+    @UnitOfWork open fun fetchUsers() {
         println("Fetching the users list...")
         val userDAO = UserDAO(sessionFactory)
         userDAO.fetchAll()
+        println("ran fetch user")
     }
 }

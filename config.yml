@@ -11,4 +11,4 @@ database:
     hibernate.format_sql: true
 
 logging:
-  level: DEBUG
+  level: INFO
